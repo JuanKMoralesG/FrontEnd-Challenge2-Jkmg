@@ -1,26 +1,29 @@
 .banner{
-    background: url(/img/Fondo_Banner.svg);
-    width: auto;
+    background: url(/img/Hero.svg);
+    background-size: cover;
+    width: 90%;
     padding-top: 14rem;
     padding-bottom: 2.5rem;
 }
 
 .banner__titulo{
-    color:var(--font-navegacion);
+    color: #FFFFFF;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: var(--montserrat);
     text-align: center;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
 .banner__texto{
     font-weight: 400;
     font-family: var(--montserrat);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: normal;
     text-align: center;
     margin-bottom: 1.5rem;
+    color: #FFFFFF;
 }
 
 .banner__boton{
@@ -63,6 +66,7 @@
     .banner{
         padding-top: 11rem;
         display: flex;
+        width: 90%;
     }
 
     .banner__contenido{

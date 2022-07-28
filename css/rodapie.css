@@ -19,12 +19,11 @@
 }
 
 .rodapie__enlace {
-    font-size: 1.1rem;
     display: inline-block;
     margin-right: .7rem;
     margin-bottom: .7rem;
     margin-left: .7rem;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-family: var(--montserrat);
 }
 
@@ -101,6 +100,12 @@
     .rodapie__form{
         display: block;
         width: 100%;
+    }
+    .rodapie__enlace {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        font-size: 1.2rem;
     }
 }
 

@@ -1,5 +1,5 @@
 .head {
-    color: #FFFFFF;
+    background-color: #FFFFFF;
     width: 100%;
 
     box-sizing: border-box;
@@ -8,12 +8,13 @@
     align-items: center;
 
     padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 2rem;
 
     position: absolute;
 }
 
 .head__logo {
+    width: 80%;
     padding: 0.5rem;
 }
 
@@ -79,6 +80,7 @@
         flex-direction: row;
         justify-content: space-between;
         border: none;
+        padding-bottom: 0.5rem;
     }
 
     .head__logo{

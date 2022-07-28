@@ -1,23 +1,24 @@
-.cursos {
+.productos {
     background: #FFF;
     padding-top: 2.5rem;
     padding-bottom: 2rem;
 }
 
-.cursos a{
+.productos a{
     text-decoration: none;
 }
 
-.cursos__titulo{
+.productos__titulo{
     color:var(--font-navegacion);
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: var(--montserrat);
     text-align: center;
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
-.cursos__texto{
+.productos__texto{
     font-weight: 400;
     font-family: var(--montserrat);
     font-size: 1.1rem;
@@ -26,7 +27,7 @@
     margin-bottom: 1.5rem;
 }
 
-.cursos__panel{
+.productos__panel{
     background: #FAFAFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -37,40 +38,42 @@
 
 }
 
-.cursos__panel-imagen{
+.productos__panel-imagen{
     width: 100%;
     max-width: 600px;
     margin-bottom: .5rem;
     border-radius: 10px;
 }
 
-.cursos__texto-titulo{
+.productos__texto-titulo{
     color:var(--font-navegacion);
     font-family: var(--montserrat);
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
-.cursos__texto-texto{
+.productos__texto-estado{
     color:#9592A6;
     font-family: var(--montserrat);
     font-size: 1.1rem;
     text-align: center;
+    padding: 0.2rem;
 }
 
-.cursos__texto-duracion{
+.productos__texto-valor{
     color:#9592A6;
     text-transform: uppercase;
     font-family: var(--montserrat);
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
+    padding: 0.2rem;
     margin-bottom: 0.5rem;
 }
 
-.cursos__texto-estado{
+.productos__texto-link{
     color: #5855D6;
     font-family: var(--montserrat);
     font-size: 1.3rem;
@@ -78,7 +81,7 @@
     margin-bottom: 1.5rem;
 }
 
-.cursos__texto-agregar{
+.productos__texto-agregar{
     color: #5855D6;
     font-family: var(--montserrat);
     font-size: 2rem;
@@ -89,43 +92,43 @@
 
 
 @media screen and (min-width:768px) {
-    .cursos__titulo{
+    .productos__titulo{
         font-size: 2.5rem;
         margin-bottom: 1.5rem;     
     }
     
-    .cursos__texto{
+    .productos__texto{
         font-size: 1.3rem;
         margin-bottom: 1.5rem;
     }
 
-    .cursos__panel-imagen{
+    .productos__panel-imagen{
         margin-top: 2rem;
     }
-    .cursos__texto-titulo{
+    .productos__texto-titulo{
         font-size: 1.8rem;
     }
     
-    .cursos__texto-texto{
+    .productos__texto-estado{
         font-size: 1.4rem;
     }
     
-    .cursos__texto-duracion{
+    .productos__texto-valor{
         font-size: 1.3rem;
     }
     
-    .cursos__texto-estado{
+    .productos__texto-link{
         font-size: 1.7rem;
     }
 
-    .cursos__texto-agregar{
+    .productos__texto-agregar{
         font-size: 3rem;
         margin-top: 2.5rem;
     }
 }
 
 @media screen and (min-width:1024px) {
-    .cursos{
+    .productos{
         flex-direction: row;
         justify-content: space-between;
         align-self: center;
@@ -133,29 +136,31 @@
         background: url(/img/Fondo_Cursos.svg);
     }
 
-    .cursos__panel{
+    .productos__panel{
         display: inline-block;
         align-content: center;
         margin: 1.5rem 1rem;
+        width: 30%;
     }
 
-    .cursos__panel-imagen{
+    .productos__panel-imagen{
         margin-top: 0rem;
         width: 100%;
     }
-    .cursos__texto-titulo{
+
+    .productos__texto-titulo{
         font-size: 1.2rem;
     }
     
-    .cursos__texto-texto{
+    .productos__texto-estado{
         font-size: 1.1rem;
     }
     
-    .cursos__texto-duracion{
+    .productos__texto-valor{
         font-size: 1.1rem;
     }
     
-    .cursos__texto-estado{
+    .productos__texto-link{
         font-size: 1.2rem;
         text-align: center;
     }

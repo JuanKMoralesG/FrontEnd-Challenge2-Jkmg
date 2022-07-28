@@ -4,26 +4,26 @@
     <head>
         <meta name="viewport" content="width=device-width initial-scale=1.0" lang="es">
         <meta charset="UTF-8">
-        <title>Home | iTraining - Entrenamiento Interactivo</title>
+        <title>Home | AluraGeek - Ecommerce</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bases.css">
         <link rel="stylesheet" href="css/head.css">
         <link rel="stylesheet" href="css/banner.css">
-        <link rel="stylesheet" href="css/cursos.css">
+        <link rel="stylesheet" href="css/productos.css">
         <link rel="stylesheet" href="css/rodapie.css">
         <link rel="stylesheet" href="css/footer.css">
     </head>
 
     <body>
         <header class="head container">
-            <img src="img/Logo iTraining-01.svg" alt="Logo iTraining" class="head__logo">
+            <img src="img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
             <nav class="head__navegacion">
                 <ul>
-                    <li class="head__enlace"><a href="#">Cursos</a></li>
-                    <li class="head__enlace"><a href="#">Certificados</a></li>
+                    <li class="head__enlace"><a href="#">Productos</a></li>
+                    <li class="head__enlace"><a href="#">Consolas</a></li>
                     <li class="head__enlace"><a href="#">Contacto</a></li>
-                    <input type="text" placeholder="Buscar Entrenamiento" class="head__buscador">
+                    <input type="text" placeholder="Buscar Producto o Consola" class="head__buscador">
                     <a href="login.html"><input type="button" value="Iniciar Sesión" class="head__boton" onClick="login.html"></a>
                 </ul> 
             </nav>
@@ -31,82 +31,110 @@
         <main>
             <section class="banner container">
                 <div class="banner__coontenido">
-                    <h1 class="banner__titulo">Plataforma de Entrenamiento Interactivo</h1>
-                    <h2 class="banner__texto">iTraining es una Plataforma de Entrenamiento Interactivo que permite el aprendizaje de manera lúdica, rápida y sencilla.</h2>
-                    <input type="button" value="Conoce Los Cursos" class="banner__boton">
+                    <h1 class="banner__titulo">Banner Promocionales</h1>
+                    <h2 class="banner__texto">Encuentra los Productos y Consolas en Promoción</h2>
+                    <input type="button" value="Conoce Nuestras Promociones" class="banner__boton">
                 </div>
-                <img src="/img/img_banner.svg" alt="Imagen Banner" class="banner__img">
             </section>
-            <section class="cursos container">
-                <h1 class="cursos__titulo">Entrenamientos Disponibles</h1>
-                <h2 class="cursos__texto">Estos son algunos de los entrenamientos disponibles</h2>
+            <section class="productos container">
+                <h1 class="productos__titulo">Productos Disponibles</h1>
+                <h2 class="productos__texto">Estos son algunos de los productos disponibles</h2>
                 <a href="#">
-                    <figure class="cursos__panel">
-                        <img src="/img/seguridad vial 1.svg" alt="Seguridad Vial" class="cursos__panel-imagen">
-                        <h2 class="cursos__texto-titulo">Curso de Seguridad Vial</h2>
-                        <h3 class="cursos__texto-texto">Certificado de Participación</h3>
-                        <p class="cursos__texto-duracion">10 Horas</p>
-                        <p class="cursos__texto-estado">¡Inscríbete Aquí!</p>
+                    <figure class="productos__panel">
+                        <img src="/img/baby_Yoda.svg" alt="Baby Yoda" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Baby Yoda</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$60.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="cursos__panel">
-                        <img src="/img/trabajo en alturas 1.svg" alt="Trabajoo en Alturas" class="cursos__panel-imagen">
-                        <h2 class="cursos__texto-titulo">Curso de Trabajo en Alturas</h2>
-                        <h3 class="cursos__texto-texto">Certificado de Participación</h3>
-                        <p class="cursos__texto-duracion">12 Horas</p>
-                        <p class="cursos__texto-estado">¡Inscríbete Aquí!</p>
+                    <figure class="productos__panel">
+                        <img src="/img/taza_clone.svg" alt="Mug Clone" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Mug Clone Star Wars</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$40.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="cursos__panel">
-                        <img src="/img/emergencia 1.svg" alt="Plan de Emergencias" class="cursos__panel-imagen">
-                        <h2 class="cursos__texto-titulo">Curso Plan de Emergencias</h2>
-                        <h3 class="cursos__texto-texto">Certificado de Participación</h3>
-                        <p class="cursos__texto-duracion">12 Horas</p>
-                        <p class="cursos__texto-estado">¡Inscríbete Aquí!</p>
+                    <figure class="productos__panel">
+                        <img src="/img/lego dark vader.svg" alt="Lego Darth Vader" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Lego Darth Vader</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$80.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="cursos__panel">
-                        <img src="/img/cargas 1.svg" alt="Manejo de Cargas" class="cursos__panel-imagen">
-                        <h2 class="cursos__texto-titulo">Curso Manejo de Cargas</h2>
-                        <h3 class="cursos__texto-texto">Certificado de Participación</h3>
-                        <p class="cursos__texto-duracion">10 Horas</p>
-                        <p class="cursos__texto-estado">¡Inscríbete Aquí!</p>
+                    <figure class="productos__panel">
+                        <img src="/img/figura_clone.svg" alt="Clone Figura de Accion" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Figura Clone Star Wars</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$30.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="cursos__panel">
-                        <img src="/img/riesgo_electrico 1.svg" alt="Riesgo Eléctrico" class="cursos__panel-imagen">
-                        <h2 class="cursos__texto-titulo">Curso Riesgo Eléctrico</h2>
-                        <h3 class="cursos__texto-texto">Certificado de Participación</h3>
-                        <p class="cursos__texto-duracion">10 Horas</p>
-                        <p class="cursos__texto-estado">¡Inscríbete Aquí!</p>
+                    <figure class="productos__panel">
+                        <img src="/img/Figura_sonic.svg" alt="Figura de Accion Sonic" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Figura de Acción Sonic</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$50.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="cursos__panel">
-                        <img src="/img/riesgos-laborales-1080x675 1.svg" alt="Riesgo Físico" class="cursos__panel-imagen">
-                        <h2 class="cursos__texto-titulo">Curso Riesgos Físicos</h2>
-                        <h3 class="cursos__texto-texto">Certificado de Participación</h3>
-                        <p class="cursos__texto-duracion">12 Horas</p>
-                        <p class="cursos__texto-estado">¡Inscríbete Aquí!</p>
+                    <figure class="productos__panel">
+                        <img src="/img/Sensor_CVirtual.svg" alt="Gafas Realidad Virtual" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Gafas Realidad Virtual</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$39.999</p>
+                        <p class="productos__texto-link">Ver Producto</p>
+                    </figure>
+                </a>
+                <h1 class="productos__titulo">Consolas Disponibles</h1>
+                <h2 class="productos__texto">Estas son algunos de las consolas disponibles</h2>
+                <a href="#">
+                    <figure class="productos__panel">
+                        <img src="/img/Consola Nintendo Switch.svg" alt="Nintendo Switch" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Nintendo Switch</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$950.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="productos__panel">
+                        <img src="/img/consola_SuperNintendo.svg" alt="Super Nintendo" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">Super Nintendo</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$400.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
+                    </figure>
+                </a>
+                <a href="#">
+                    <figure class="productos__panel">
+                        <img src="/img/Consola_ps5.svg" alt="Play Station 5" class="productos__panel-imagen">
+                        <h2 class="productos__texto-titulo">PlayStation 5</h2>
+                        <h3 class="productos__texto-estado">Disponible</h3>
+                        <p class="productos__texto-valor">$1.000.000</p>
+                        <p class="productos__texto-link">Ver Producto</p>
                     </figure>
                 </a>
                 <a href="agregar.html">
-                    <h2 class="cursos__texto-agregar">Agregar Entrenamiento +</h2>
+                    <h2 class="productos__texto-agregar">Agregar Producto +</h2>
                 </a>
             </section>
             <section class="rodapie container">
-                <img src="/img/Logo Blanco iTraining 2022.svg" alt="" class="rodapie__logo">
+                <img src="/img/LogoAlura_blanco-01.svg" alt="LogoAlura_blanco" class="rodapie__logo">
                 <nav class="rodapie__navegacion">
                     <ul>
                         <li class="rodapie__enlace"><a href="#">Quienes Somos</a></li>
                         <li class="rodapie__enlace"><a href="#">Política de Privacidad</a></li>
                         <li class="rodapie__enlace"><a href="#">Programa de Fidelidad</a></li>
-                        <li class="rodapie__enlace"><a href="#">Programas Destacados</a></li>
-                        <li class="rodapie__enlace"><a href="#">Entrenamientos Exclusivos</a></li>
+                        <li class="rodapie__enlace"><a href="#">Canales de Venta</a></li>
+                        <li class="rodapie__enlace"><a href="#">Anúncie Aquí</a></li>
                     </ul>
                 </nav>
                 <form action="" class="rodapie__form">
