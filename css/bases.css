@@ -1,0 +1,17 @@
+:root{
+    --montserrat: 'Montserrat', sand-serif;
+    --open-sans: 'Open Sans' , sand-serif;
+
+    --font-navegacion:#272D4E;
+}
+
+body{
+    font-family: var(--open-sans);
+}
+
+.container{
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
