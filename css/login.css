@@ -57,6 +57,16 @@
     margin-top: 1.2rem;
 }
 
+.input-message-error-login{
+    display: block;
+    color:#29AAF3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: var(--montserrat);
+    margin-top: 0.8rem;
+}
+
 @media screen and (min-width:768px) {
     .login{
         padding-top: 17.5rem;

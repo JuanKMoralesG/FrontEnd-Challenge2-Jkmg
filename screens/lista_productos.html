@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0" lang="es">
+        <meta charset="UTF-8">
+        <title>Lista de Productos | AluraGeek - Ecommerce</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/bases.css">
+        <link rel="stylesheet" href="../css/head.css">
+        <link rel="stylesheet" href="../css/lista_productos.css">
+        <link rel="stylesheet" href="../css/rodapie.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+
+    <body>
+        <header class="head container">
+            <img src="../img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
+            <nav class="head__navegacion">
+                <ul>
+                    <li class="head__enlace"><a href="#">Productos</a></li>
+                    <li class="head__enlace"><a href="#">Consolas</a></li>
+                    <li class="head__enlace"><a href="#">Contacto</a></li>
+                    <input type="text" placeholder="Buscar Producto o Consola" class="head__buscador">
+                    <a href="home.html"><input type="button" value="Cerrar Sesión" class="head__boton"></a>
+                </ul>   
+            </nav>
+        </header> 
+
+        <main>
+            <section class="lista__productos container">
+                <h1 class="lista__titulo">Lista de Productos o Consolas</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table__column--p">Nombre de Producto</th>
+                            <th class="table__column--g">Cantidad Disponible</th>
+                            <th class="table__column--v">Valor del Producto</th>
+                            <th class="table__column--m table__align--center">
+                                <a href="agregar.html">Agregar Producto  </a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody data-table>
+
+                    </tbody>
+                  </table>
+                  <a href="home_admin.html"><h1 class="lista__titulo">Volver</h1></a> 
+            </section>
+
+            <section class="rodapie container">
+                <img src="/img/LogoAlura_blanco-01.svg" alt="LogoAlura_blanco" class="rodapie__logo">
+                <nav class="rodapie__navegacion">
+                    <ul>
+                        <li class="rodapie__enlace"><a href="#">Quienes Somos</a></li>
+                        <li class="rodapie__enlace"><a href="#">Política de Privacidad</a></li>
+                        <li class="rodapie__enlace"><a href="#">Programa de Fidelidad</a></li>
+                        <li class="rodapie__enlace"><a href="#">Programas Destacados</a></li>
+                        <li class="rodapie__enlace"><a href="#">Entrenamientos Exclusivos</a></li>
+                    </ul>
+                </nav>
+                <form action="" class="rodapie__form">
+                    <h1 class="rodapie__form-titulo">Hable Con Nosotros</h1>
+                    <label for="nombre" class="rodapie__form-label">Nombre</label>
+                    <input type="text" class="rodapie__form-input" id="nombre" placeholder="Escribe tu nombre">
+                    <label for="asunto" class="rodapie__form-label">Asunto</label>
+                    <input type="text" class="rodapie__form-input" id="asunto" placeholder="Escribe tu asunto">
+                    <label for="mensaje" class="rodapie__form-label">Mensaje</label>
+                    <textarea name="msj" id="mensaje" class="rodapie__form-msj" placeholder="Escribe tu mensaje"></textarea>
+                    <input type="button" value="Enviar Mensaje" class="rodapie__form-boton" id="enviar">
+                </form>
+            </section>
+        </main>  
+    </body>
+
+    <footer class="footer container">
+        <div class="footer__iconos">
+            <a href="#"><img src="/img/whatsapp.png" alt="whatsapp" class="footer__enlace-imagen"></a>
+            <a href="#"><img src="/img/instagram.png" alt="instagram" class="footer__enlace-imagen"></a>
+            <a href="#"><img src="/img/email (3).png" alt="email" class="footer__enlace-imagen"></a>
+        </div>
+        <p class="footer__texto">&copy Desarrollado Por: <br> Juan Camilo Morales González <br> Bogotá - Colombia 2022</p>
+    </footer>
+
+    <script type="module" src="../controllers/product_controller.js"></script>
+
+</html>

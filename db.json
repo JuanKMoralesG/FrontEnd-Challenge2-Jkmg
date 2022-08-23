@@ -1,0 +1,28 @@
+{
+  "producto": [
+    {
+      "nombre": "Juego de Uno",
+      "cant": "50",
+      "valor": "15.000",
+      "id": "4c3beade-b2fa-4df5-8bea-a858388122b0"
+    },
+    {
+      "nombre": "Nintendo Wii 2",
+      "cant": "10",
+      "valor": "200.000",
+      "id": "f3a7920f-2cca-4cfa-9858-ac2b3a66fa99"
+    },
+    {
+      "nombre": "Sonic",
+      "cant": "200",
+      "valor": "10.000",
+      "id": "7bb77586-545b-447b-816a-1867518e0423"
+    },
+    {
+      "nombre": "Figura Dragon Ball",
+      "cant": "100",
+      "valor": "5.000",
+      "id": "fa590803-31ce-4c10-b14b-af1f2056467a"
+    }
+  ]
+}

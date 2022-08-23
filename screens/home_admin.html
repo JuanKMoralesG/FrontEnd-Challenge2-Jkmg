@@ -4,27 +4,27 @@
     <head>
         <meta name="viewport" content="width=device-width initial-scale=1.0" lang="es">
         <meta charset="UTF-8">
-        <title>Home | AluraGeek - Ecommerce</title>
+        <title>Home Administrador | AluraGeek - Ecommerce</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/bases.css">
-        <link rel="stylesheet" href="css/head.css">
-        <link rel="stylesheet" href="css/banner.css">
-        <link rel="stylesheet" href="css/productos.css">
-        <link rel="stylesheet" href="css/rodapie.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/bases.css">
+        <link rel="stylesheet" href="../css/head.css">
+        <link rel="stylesheet" href="../css/banner.css">
+        <link rel="stylesheet" href="../css/productos.css">
+        <link rel="stylesheet" href="../css/rodapie.css">
+        <link rel="stylesheet" href="../css/footer.css">
     </head>
 
     <body>
         <header class="head container">
-            <img src="img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
+            <img src="../img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
             <nav class="head__navegacion">
                 <ul>
                     <li class="head__enlace"><a href="#">Productos</a></li>
                     <li class="head__enlace"><a href="#">Consolas</a></li>
                     <li class="head__enlace"><a href="#">Contacto</a></li>
                     <input type="text" placeholder="Buscar Producto o Consola" class="head__buscador">
-                    <a href="login.html"><input type="button" value="Iniciar Sesión" class="head__boton" onClick="login.html"></a>
+                    <a href="login.html"><input type="button" value="Cerrar Sesión" class="head__boton" onClick="login.html"></a>
                 </ul> 
             </nav>
         </header> 
@@ -122,8 +122,8 @@
                         <p class="productos__texto-link">Ver Producto</p>
                     </figure>
                 </a>
-                <a href="agregar.html">
-                    <h2 class="productos__texto-agregar">Agregar Producto +</h2>
+                <a href="lista_productos.html">
+                    <h2 class="productos__texto-agregar">Ver Lista de Productos</h2>
                 </a>
             </section>
             <section class="rodapie container">
@@ -140,12 +140,17 @@
                 <form action="" class="rodapie__form">
                     <h1 class="rodapie__form-titulo">Hable Con Nosotros</h1>
                     <label for="nombre" class="rodapie__form-label">Nombre</label>
-                    <input type="text" class="rodapie__form-input" id="nombre" placeholder="Escribe tu nombre">
+                    <input type="text" class="rodapie__form-input" id="nombre" placeholder="Escribe tu nombre" required data-tipo="nombre" maxlength="40">                  
+
                     <label for="asunto" class="rodapie__form-label">Asunto</label>
-                    <input type="text" class="rodapie__form-input" id="asunto" placeholder="Escribe tu asunto">
+                    <input type="text" class="rodapie__form-input" id="asunto" placeholder="Escribe tu asunto" required data-tipo="asunto" maxlength="40">
+ 
                     <label for="mensaje" class="rodapie__form-label">Mensaje</label>
-                    <textarea name="msj" id="mensaje" class="rodapie__form-msj" placeholder="Escribe tu mensaje"></textarea>
-                    <input type="button" value="Enviar Mensaje" class="rodapie__form-boton">
+                    <input name="msj" id="mensaje" class="rodapie__form-msj" placeholder="Escribe tu mensaje" required data-tipo="mensaje" maxlength="120"></textarea>
+                    <input type="button" value="Enviar Mensaje" class="rodapie__form-boton" id="enviar">
+
+                    <span class="input-message-error"></span>
+
                 </form>
             </section>
         </main>  
@@ -159,5 +164,7 @@
         </div>
         <p class="footer__texto">&copy Desarrollado Por: <br> Juan Camilo Morales González <br> Bogotá - Colombia 2022</p>
     </footer>
+
+    <script type="module" src="/js/app.js"></script>
 
 </html>

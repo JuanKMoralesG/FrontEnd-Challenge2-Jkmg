@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0" lang="es">
+        <meta charset="UTF-8">
+        <title>Agregar Producto | AluraGeek - Ecommerce</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/bases.css">
+        <link rel="stylesheet" href="../css/head.css">
+        <link rel="stylesheet" href="../css/agregar.css">
+        <link rel="stylesheet" href="../css/rodapie.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+
+    <body>
+        <header class="head container">
+            <img src="../img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
+            <nav class="head__navegacion">
+                <ul>
+                    <li class="head__enlace"><a href="#">Productos</a></li>
+                    <li class="head__enlace"><a href="#">Consolas</a></li>
+                    <li class="head__enlace"><a href="#">Contacto</a></li>
+                    <input type="text" placeholder="Buscar Producto o Consola" class="head__buscador">
+                    <a href="home.html"><input type="button" value="Cerrar Sesión" class="head__boton" onClick="login.html"></a>
+                </ul> 
+            </nav>
+        </header> 
+        <main>
+            <section class="agregar container">
+                <h1 class="agregar__titulo">Agregar Nuevo Producto o Consola</h1>
+                <form action="" class="agregar__form" data-form>
+                    <label for="nombre__producto" class="agregar__form-label">Nombre del Producto</label>
+                    <input type="text" class="agregar__form-input" id="nombre__producto" placeholder="Escriba el Nombre del Producto" required data-nombre>
+                    <label for="estado" class="agregar__form-label">Cantidad Disponible</label>
+                    <input type="text" class="agregar__form-input" id="estado" placeholder="Escriba la Cantidad de Productos en Stock" required data-cant>
+                    <label for="valor" class="agregar__form-label">Valor de Venta</label>
+                    <input type="text" class="agregar__form-input" id="valor" placeholder="Escriba el Valor x Unidad del Producto" required data-valor>
+                    <label for="imagen__nuevo__producto" class="agregar__form-label">Imagen del Nuevo Producto</label>
+                    <input type="button" value="Agregar Imagen del Producto" class="agregar__form-boton2" id="imagen__nuevo__producto">
+                    <button type="submit" class="agregar__form-boton">Agregar Producto</button>
+                </form>
+            </section>
+
+            <section class="rodapie container">
+                <img src="/img/LogoAlura_blanco-01.svg" alt="LogoAlura_blanco" class="rodapie__logo">
+                <nav class="rodapie__navegacion">
+                    <ul>
+                        <li class="rodapie__enlace"><a href="#">Quienes Somos</a></li>
+                        <li class="rodapie__enlace"><a href="#">Política de Privacidad</a></li>
+                        <li class="rodapie__enlace"><a href="#">Programa de Fidelidad</a></li>
+                        <li class="rodapie__enlace"><a href="#">Programas Destacados</a></li>
+                        <li class="rodapie__enlace"><a href="#">Entrenamientos Exclusivos</a></li>
+                    </ul>
+                </nav>
+                <form action="" class="rodapie__form">
+                    <h1 class="rodapie__form-titulo">Hable Con Nosotros</h1>
+                    <label for="nombre" class="rodapie__form-label">Nombre</label>
+                    <input type="text" class="rodapie__form-input" id="nombre" placeholder="Escribe tu nombre">
+                    <label for="asunto" class="rodapie__form-label">Asunto</label>
+                    <input type="text" class="rodapie__form-input" id="asunto" placeholder="Escribe tu asunto">
+                    <label for="mensaje" class="rodapie__form-label">Mensaje</label>
+                    <textarea name="msj" id="mensaje" class="rodapie__form-msj" placeholder="Escribe tu mensaje"></textarea>
+                    <input type="button" value="Enviar Mensaje" class="rodapie__form-boton">
+                </form>
+            </section>
+        </main>  
+    </body>
+
+    <footer class="footer container">
+        <div class="footer__iconos">
+            <a href="#"><img src="/img/whatsapp.png" alt="whatsapp" class="footer__enlace-imagen"></a>
+            <a href="#"><img src="/img/instagram.png" alt="instagram" class="footer__enlace-imagen"></a>
+            <a href="#"><img src="/img/email (3).png" alt="email" class="footer__enlace-imagen"></a>
+        </div>
+        <p class="footer__texto">&copy Desarrollado Por: <br> Juan Camilo Morales González <br> Bogotá - Colombia 2022</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../controllers/registro_controller.js"></script>
+
+</html>

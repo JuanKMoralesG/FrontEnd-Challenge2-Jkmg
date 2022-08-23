@@ -1,0 +1,71 @@
+.producto_agregado{
+    background-color: #fafafa;
+    width: auto;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto_agregado__titulo{
+    color:var(--font-navegacion);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.producto_agregado__boton{
+    width: 60%;
+    height: 2.5rem;
+    background: #29AAF3;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size:1.2rem;
+    font-weight: bold;
+    font-family: var(--open-sans);
+    margin-top: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 1.2rem;
+}
+
+.register-card__icon-complete {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    background-image: url(../img/checkmark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.register-card__icon-incomplete {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    background-image: url(../img/boton-x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width:768px) {
+    .producto_agregado{
+        padding-top: 18rem;
+        padding-bottom: 7rem;
+    }  
+}
+
+@media screen and (min-width:1024px) {
+    .producto_agregado{
+        padding-top: 12rem;
+        padding-bottom: 6rem;
+    }
+}

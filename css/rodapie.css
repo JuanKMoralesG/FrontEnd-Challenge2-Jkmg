@@ -58,6 +58,17 @@
     margin-top: 0.8rem;
 }
 
+.input-message-error{
+    display: block;
+    color:#FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: var(--montserrat);
+    margin-top: 0.8rem;
+}
+
+
 .rodapie__form-input{
     display: block;
     border: none;

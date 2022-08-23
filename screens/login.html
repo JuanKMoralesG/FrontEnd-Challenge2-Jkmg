@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0" lang="es">
+        <meta charset="UTF-8">
+        <title>Login | AluraGeek - Ecommerce</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/bases.css">
+        <link rel="stylesheet" href="../css/head.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/rodapie.css">
+        <link rel="stylesheet" href="../css/footer.css">
+    </head>
+
+    <body>
+        <header class="head container">
+            <img src="../img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
+            <nav class="head__navegacion">
+                <ul>
+                    <li class="head__enlace"><a href="#">Productos</a></li>
+                    <li class="head__enlace"><a href="#">Consolas</a></li>
+                    <li class="head__enlace"><a href="#">Contacto</a></li>
+                    <input type="text" placeholder="Buscar Producto o Consola" class="head__buscador">
+                    <input type="button" value="Iniciar Sesión" class="head__boton">
+                </ul>
+                
+            </nav>
+        </header> 
+        <main>
+            <section class="login container">
+                <h1 class="login__titulo">Iniciar Sesión</h1>
+                <form action="" class="login__form">
+                    <label for="usuario" class="login__form-label">Email</label>
+                    <input type="email" class="login__form-input" id="usuario" placeholder="Escriba su correo electrónico" required pattern="">
+                    <label for="clave" class="login__form-label">Contraseña</label>
+                    <input type="password" class="login__form-input" id="clave" placeholder="Escriba su contraseña">
+                    <a><input type="button" value="Iniciar Sesión" class="login__form-boton" id="inicioSesion"></a>
+
+                    <span class="input-message-error-login"></span>
+                </form>
+            </section>
+
+            <section class="rodapie container">
+                <img src="/img/LogoAlura_blanco-01.svg" alt="LogoAlura_blanco" class="rodapie__logo">
+                <nav class="rodapie__navegacion">
+                    <ul>
+                        <li class="rodapie__enlace"><a href="#">Quienes Somos</a></li>
+                        <li class="rodapie__enlace"><a href="#">Política de Privacidad</a></li>
+                        <li class="rodapie__enlace"><a href="#">Programa de Fidelidad</a></li>
+                        <li class="rodapie__enlace"><a href="#">Programas Destacados</a></li>
+                        <li class="rodapie__enlace"><a href="#">Entrenamientos Exclusivos</a></li>
+                    </ul>
+                </nav>
+                <form action="" class="rodapie__form">
+                    <h1 class="rodapie__form-titulo">Hable Con Nosotros</h1>
+                    <label for="nombre" class="rodapie__form-label">Nombre</label>
+                    <input type="text" class="rodapie__form-input" id="nombre" placeholder="Escribe tu nombre">
+                    <label for="asunto" class="rodapie__form-label">Asunto</label>
+                    <input type="text" class="rodapie__form-input" id="asunto" placeholder="Escribe tu asunto">
+                    <label for="mensaje" class="rodapie__form-label">Mensaje</label>
+                    <textarea name="msj" id="mensaje" class="rodapie__form-msj" placeholder="Escribe tu mensaje"></textarea>
+                    <input type="button" value="Enviar Mensaje" class="rodapie__form-boton" id="enviar">
+                </form>
+            </section>
+        </main>  
+    </body>
+
+    <footer class="footer container">
+        <div class="footer__iconos">
+            <a href="#"><img src="/img/whatsapp.png" alt="whatsapp" class="footer__enlace-imagen"></a>
+            <a href="#"><img src="/img/instagram.png" alt="instagram" class="footer__enlace-imagen"></a>
+            <a href="#"><img src="/img/email (3).png" alt="email" class="footer__enlace-imagen"></a>
+        </div>
+        <p class="footer__texto">&copy Desarrollado Por: <br> Juan Camilo Morales González <br> Bogotá - Colombia 2022</p>
+    </footer>
+
+    <script type="module" src="/js/validacion_login.js"></script>
+
+</html>

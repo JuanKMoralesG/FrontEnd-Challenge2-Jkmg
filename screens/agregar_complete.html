@@ -4,40 +4,34 @@
     <head>
         <meta name="viewport" content="width=device-width initial-scale=1.0" lang="es">
         <meta charset="UTF-8">
-        <title>Login | iTraining - Entrenamiento Interactivo</title>
+        <title>Agregar Producto | AluraGeek - Ecommerce</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/bases.css">
-        <link rel="stylesheet" href="css/head.css">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/rodapie.css">
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/bases.css">
+        <link rel="stylesheet" href="../css/head.css">
+        <link rel="stylesheet" href="../css/registro_completo.css">
+        <link rel="stylesheet" href="../css/rodapie.css">
+        <link rel="stylesheet" href="../css/footer.css">
     </head>
 
     <body>
         <header class="head container">
-            <img src="img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
+            <img src="../img/Logo.svg" alt="Logo AluraGeek" class="head__logo">
             <nav class="head__navegacion">
                 <ul>
                     <li class="head__enlace"><a href="#">Productos</a></li>
                     <li class="head__enlace"><a href="#">Consolas</a></li>
                     <li class="head__enlace"><a href="#">Contacto</a></li>
                     <input type="text" placeholder="Buscar Producto o Consola" class="head__buscador">
-                    <input type="button" value="Iniciar Sesión" class="head__boton">
-                </ul>
-                
+                    <a href="home.html"><input type="button" value="Cerrar Sesión" class="head__boton" onClick="login.html"></a>
+                </ul> 
             </nav>
         </header> 
         <main>
-            <section class="login container">
-                <h1 class="login__titulo">Iniciar Sesión</h1>
-                <form action="" class="login__form">
-                    <label for="usuario" class="login__form-label">Email</label>
-                    <input type="email" class="login__form-input" id="usuario" placeholder="Escriba su correo electrónico">
-                    <label for="asunto" class="login__form-label">Asunto</label>
-                    <input type="password" class="login__form-input" id="asunto" placeholder="Escriba su contraseña">
-                    <a href="home.html"><input type="button" value="Iniciar Sesión" class="login__form-boton"></a>
-                </form>
+            <section class="producto_agregado container">
+                <span class="register-card__icon-complete"></span>
+                <h1 class="producto_agregado__titulo">¡Registro completado!</h1>
+                <a href="./lista_productos.html" class="producto_agregado__boton">Ver Productos</a>
             </section>
 
             <section class="rodapie container">
